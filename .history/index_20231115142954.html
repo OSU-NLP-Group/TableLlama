@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">🦙TableLlama: Towards Open Large Generalist Models for Tables</h1>
+            <h1 class="title is-1 publication-title">🦙 TableLlama: Towards Open Large Generalist Models for Tables</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -158,7 +158,7 @@
               <div class="column is-four-fifths">
                   <div class="item">
                       <!-- Your image here -->
-                      <img src="static/images/overview1_yifei_1114-v13.png" alt="An overview of TableInstruct and 🦙TableLlama">
+                      <img src="static/images/overview1_yifei_1114-v13.png" alt="The hybrid instruction tuning of 🦣MAmmoTH">
                       <h2 class="subtitle">
                         Figure 1: An overview of TableInstruct and TableLlama. TableInstruct includes a wide variety of realistic tables and tasks with instructions. We make the first step towards developing open-source generalist models for tables with TableInstruct and TableLlama.
                       </h2>
@@ -180,8 +180,7 @@
                       <!-- Your image here -->
                       <img src="static/images/Picture2-v10.png" alt="The hybrid instruction tuning of 🦣MAmmoTH">
                       <h2 class="subtitle">
-                        Figure 2: Illustration of three exemplary tasks: (a) Column type annotation. This task is to annotate the selected column with the correct semantic types. (b) Row population. This task is to populate rows given table metadata and partial row entities. (c) Hierarchical table QA. For subfigures (a) and (b), we mark candidates with red color in the
-                        "task instruction" part. The candidate set size can be hundreds to thousands in TableInstruct.
+                        Figure 1: An overview of TableInstruct and TableLlama. TableInstruct includes a wide variety of realistic tables and tasks with instructions. We make the first step towards developing open-source generalist models for tables with TableInstruct and TableLlama.
                       </h2>
                   </div>
               </div>
@@ -190,63 +189,6 @@
   </div>
 </section>
 <!-- End image carousel -->
-
-<section class="hero">
-  <div class="hero-body">
-      <div class="container is-max-desktop">
-          <div class="columns is-centered">
-              <div class="column has-text-centered is-fifths-fifths">
-                  <h2 class="title is-3">Our Dataset: TableInstruct</h2>
-                  <div class="content has-text-justified">
-                      <div id="myTable_wrapper" class="dataTables_wrapper no-footer"><div id="myTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="myTable"></label></div><table id="myTable" class="dataTable no-footer" role="grid" aria-describedby="myTable_info">
-                          <thead>
-                              <tr role="row"><th class="sorting sorting_asc" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Training Dataset: activate to sort column descending" style="width: 99.6641px;">Task Category</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Type: activate to sort column ascending" style="width: 35.6016px;">Task Name</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Annotation: activate to sort column ascending" style="width: 83.9062px;">Dataset</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Samples: activate to sort column ascending" style="width: 63.3828px;">In-domain</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Characteristics: activate to sort column ascending" style="width: 119.289px;">#Train</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Fields: activate to sort column ascending" style="width: 342.156px;">#Test</th></tr>
-                          </thead>
-                          <tbody>
-                              
-                          <tr class="odd">
-                                  <td class="sorting_1">AQuA-RAT</td>
-                                  <td>CoT</td>
-                                  <td>Human</td>
-                                  <td>90K</td>
-                                  <td>GRE/GMAT Exam</td>
-                                  <td>Inter-Algebra</td>
-                              </tr><tr class="even">
-                                  <td class="sorting_1">AQuA-RAT</td>
-                                  <td>PoT</td>
-                                  <td>GPT4</td>
-                                  <td>9.7K</td>
-                                  <td>GPT4 + Validated</td>
-                                  <td>Inter-Algebra</td>
-                              </tr><tr class="odd">
-                                  <td class="sorting_1">NumG</td>
-                                  <td>PoT</td>
-                                  <td>Human</td>
-                                  <td>13K</td>
-                                  <td>Lila Annotated</td>
-                                  <td>Pre-Algebra</td>
-                              </tr><tr class="even">
-                                  <td class="sorting_1">TheoremQA</td>
-                                  <td>CoT</td>
-                                  <td>GPT-4</td>
-                                  <td>600</td>
-                                  <td>GPT4 + Validated</td>
-                                  <td>Algebra, Probability, NumTheory, Calculus, Geometry</td>
-                              </tr><tr class="odd">
-                                  <td class="sorting_1">TheoremQA</td>
-                                  <td>PoT</td>
-                                  <td>GPT4</td>
-                                  <td>700</td>
-                                  <td>GPT4 + Validated</td>
-                                  <td>Algebra, Probability, NumTheory, Calculus, Geometry</td>
-                              </tr></tbody>
-                      </table><div class="dataTables_info" id="myTable_info" role="status" aria-live="polite">Showing 1 to 13 of 13 entries</div><div class="dataTables_paginate paging_simple_numbers" id="myTable_paginate"><a class="paginate_button previous disabled" aria-controls="myTable" data-dt-idx="0" tabindex="-1" id="myTable_previous">Previous</a><span><a class="paginate_button current" aria-controls="myTable" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="myTable" data-dt-idx="2" tabindex="-1" id="myTable_next">Next</a></div></div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
 
 
 
