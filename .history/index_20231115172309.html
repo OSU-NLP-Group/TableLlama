@@ -202,26 +202,26 @@
               <table id="myTable" class="dataTable no-footer" role="grid">
                 <thead>
                   <tr role="row">
-                    <th rowspan="2" style="vertical-align: bottom;">Task Category</th>
-                    <th rowspan="2" style="vertical-align: bottom;">Task Name</th>
-                    <th rowspan="2" style="vertical-align: bottom;">Dataset</th>
-                    <th rowspan="2" style="vertical-align: bottom;">In-domain</th>
-                    <th colspan="2" style="vertical-align: bottom;"></th>
-                    <th colspan="3" style="vertical-align: bottom; text-align: middle;">Input Token Length</th>
+                    <th rowspan="2" style="vertical-align: middle;">Task Category</th>
+                    <th rowspan="2" style="vertical-align: middle;">Task Name</th>
+                    <th rowspan="2" style="vertical-align: middle;">Dataset</th>
+                    <th rowspan="2" style="vertical-align: middle;">In-domain</th>
+                    <th colspan="2" style="vertical-align: middle;">#Train<br>(Table / Sample)</th>
+                    <th colspan="3" style="horizontal-align: middle;">Input Token Length</th>
                   </tr>
                   <tr role="row">
-                    <th style="vertical-align: bottom;">Train (Table/Sample)</th>
-                    <th style="vertical-align: bottom;">Test (Table/Sample)</th>
-                    <th style="vertical-align: bottom;">min</th>
-                    <th style="vertical-align: bottom;">max</th>
-                    <th style="vertical-align: bottom;">median</th>
+                    <th>Train (Table/Sample)</th>
+                    <th>Test (Table/Sample)</th>
+                    <th>min</th>
+                    <th>max</th>
+                    <th>median</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td rowspan="3" style="vertical-align: middle;">Table Interpretation</td>
-                    <td>Column Type Annotation</td>
-                    <td rowspan="3" style="vertical-align: middle;">TURL</td>
+                    <td rowspan="3">Table Interpretation</td>
+                    <td>Col Type Annot.</td>
+                    <td rowspan="3">TURL</td>
                     <td>Yes</td>
                     <td>397K/628K</td>
                     <td>1K/2K</td>
@@ -230,22 +230,13 @@
                     <td>2613</td>
                   </tr>
                   <tr>
-                    <td>Relation Extraction</td>
+                    <td>Relation Extract.</td>
                     <td>Yes</td>
                     <td>53K/63K</td>
                     <td>1K/2K</td>
                     <td>2602</td>
                     <td>8192</td>
                     <td>3219</td>
-                  </tr>
-                  <tr>
-                    <td>Entity Linking</td>
-                    <td>Yes</td>
-                    <td>193K/1264K</td>
-                    <td>1K/2K</td>
-                    <td>299</td>
-                    <td>8192</td>
-                    <td>4667</td>
                   </tr>
                   <!-- More rows following the same pattern -->
                 </tbody>
