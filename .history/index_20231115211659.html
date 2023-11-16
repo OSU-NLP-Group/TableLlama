@@ -47,55 +47,17 @@
 <body>
 
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="navbar-menu">
-      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-        <a class="navbar-item" href="https://github.com/OSU-NLP-Group">
-          <span class="icon">
-            <svg class="svg-inline--fa fa-home fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg><!-- <i class="fas fa-home"></i> Font Awesome fontawesome.com -->
-          </span>
-        </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More Research
-          </a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://arxiv.org/abs/2201.10608">
-              DOM-LM
-            </a>
-            <a class="navbar-item" href="https://github.com/dki-lab/Pangu/">
-              Pangu
-            </a>
-            <a class="navbar-item" href="https://osu-nlp-group.github.io/MagicBrush/">
-              MagicBrush
-            </a>
-            <a class="navbar-item" href="https://dki-lab.github.io/LLM-Planner/">
-              LLM-Planner
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </nav>
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- Flex container for icon and title -->
-            <div style="display: flex; align-items: center; justify-content: center;">
-              <img src="static/images/TableLlama_transparent_background.png" alt="Icon" style="height: 7em; margin-right: -90px;">
-              <h1 class="title is-1 publication-title">TableLlama: Towards Open Large Generalist Models for Tables</h1>
+            <!-- Icon and Title in the same line -->
+            <div style="display: inline-block; vertical-align: middle;">
+              <img src="static/images/TableLlama_transparent_background.png" alt="Icon" style="height: 1em; margin-right: 10px;">
+            </div>
+            <div style="display: inline-block; vertical-align: middle;">
+                <h1 class="title is-1 publication-title">TableLlama: Towards Open Large Generalist Models for Tables</h1>
             </div>
             <!-- <h1 class="title is-1 publication-title">TableLlama: Towards Open Large Generalist Models for Tables</h1> -->
             <div class="is-size-5 publication-authors">
@@ -418,166 +380,6 @@
   </div>
 </section>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered is-fifths-fifths">
-          <h2 class="title is-3">In-domain Evaluation:</h2>
-          <div class="content has-text-justified">
-            <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
-              <table id="myTable" class="dataTable no-footer" role="grid">
-                <thead>
-                  <tr role="row">
-                    <th style="vertical-align: bottom;">Datasets</th>
-                    <th style="vertical-align: bottom;">Metric</th>
-                    <th style="vertical-align: bottom;">Base</th>
-                    <th style="vertical-align: bottom;">TableLlama</th>
-                    <th style="vertical-align: bottom;">SOTA</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  </tr>
-                    <td style="vertical-align: bottom;">Column Type Annotation</td>
-                    <td style="vertical-align: bottom;">F1</td>
-                    <td style="vertical-align: bottom;">3.01</td>
-                    <td style="vertical-align: bottom;">94.39</td>
-                    <td style="vertical-align: bottom;">94.54</td>
-                  </tr>
-                    <td style="vertical-align: bottom;">Relation Extraction</td>
-                    <td style="vertical-align: bottom;">F1</td>
-                    <td style="vertical-align: bottom;">0.96</td>
-                    <td style="vertical-align: bottom;">91.95</td>
-                    <td style="vertical-align: bottom;">94.91</td>
-                  </tr>
-                    <td style="vertical-align: bottom;">Entitly Linking</td>
-                    <td style="vertical-align: bottom;">Accuracy</td>
-                    <td style="vertical-align: bottom;">31.80</td>
-                    <td style="vertical-align: bottom;">93.65</td>
-                    <td style="vertical-align: bottom;">84.90</td>
-                  </tr>
-                    <td style="vertical-align: bottom;">Schema Augmentation</td>
-                    <td style="vertical-align: bottom;">MAP</td>
-                    <td style="vertical-align: bottom;">36.75</td>
-                    <td style="vertical-align: bottom;">80.50</td>
-                    <td style="vertical-align: bottom;">77.55</td>
-                  </tr>
-                    <td style="vertical-align: bottom;">Row Population</td>
-                    <td style="vertical-align: bottom;">MAP</td>
-                    <td style="vertical-align: bottom;">4.53</td>
-                    <td style="vertical-align: bottom;">58.44</td>
-                    <td style="vertical-align: bottom;">73.31</td>
-                  </tr>
-                    <td style="vertical-align: bottom;">HiTab</td>
-                    <td style="vertical-align: bottom;">Exec Acc</td>
-                    <td style="vertical-align: bottom;">14.96</td>
-                    <td style="vertical-align: bottom;">64.71</td>
-                    <td style="vertical-align: bottom;">47.00</td>
-                  </tr>
-                    <td style="vertical-align: bottom;">FeTaQA</td>
-                    <td style="vertical-align: bottom;">BLEU</td>
-                    <td style="vertical-align: bottom;">8.54</td>
-                    <td style="vertical-align: bottom;">39.05</td>
-                    <td style="vertical-align: bottom;">33.44</td>
-                  </tr>
-                    <td style="vertical-align: bottom;">TabFact</td>
-                    <td style="vertical-align: bottom;">Accuracy</td>
-                    <td style="vertical-align: bottom;">41.65</td>
-                    <td style="vertical-align: bottom;">82.55</td>
-                    <td style="vertical-align: bottom;">84.87</td>
-                  </tr>
-                  <!-- More rows following the same pattern -->
-                </tbody>
-              </table>
-              <!-- Additional HTML for pagination and search, if needed -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered is-fifths-fifths">
-          <h2 class="title is-3">Out-of-domain Evaluation:</h2>
-          <div class="content has-text-justified">
-            <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
-              <table id="myTable" class="dataTable no-footer" role="grid">
-                <thead>
-                  <tr role="row">
-                    <th style="vertical-align: bottom;">Datasets</th>
-                    <th style="vertical-align: bottom;">Metric</th>
-                    <th style="vertical-align: bottom;">Base</th>
-                    <th style="vertical-align: bottom;">TableLlama</th>
-                    <th style="vertical-align: bottom;">SOTA</th>
-                    <th style="vertical-align: bottom;">\Delta_Base</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr role="row">
-                    <td style="vertical-align: bottom;">FEVEROUS</td>
-                    <td style="vertical-align: bottom;">Accuracy</td>
-                    <td style="vertical-align: bottom;">23.66</td>
-                    <td style="vertical-align: bottom;">72.30</td>
-                    <td style="vertical-align: bottom;">82.40</td>
-                    <td style="vertical-align: bottom;">+48.64</td>
-                  </tr>
-                  <tr role="row">
-                    <td style="vertical-align: bottom;">HybridQA</td>
-                    <td style="vertical-align: bottom;">Accuracy</td>
-                    <td style="vertical-align: bottom;">20.72</td>
-                    <td style="vertical-align: bottom;">27.61</td>
-                    <td style="vertical-align: bottom;">63.40</td>
-                    <td style="vertical-align: bottom;">+6.89</td>
-                  </tr>
-                  <tr role="row">
-                    <td style="vertical-align: bottom;">KVRET</td>
-                    <td style="vertical-align: bottom;">Micro F1</td>
-                    <td style="vertical-align: bottom;">38.90</td>
-                    <td style="vertical-align: bottom;">48.73</td>
-                    <td style="vertical-align: bottom;">67.80</td>
-                    <td style="vertical-align: bottom;">+9.83</td>
-                  </tr>
-                  <tr role="row">
-                    <td style="vertical-align: bottom;">ToTTo</td>
-                    <td style="vertical-align: bottom;">BLEU</td>
-                    <td style="vertical-align: bottom;">10.39</td>
-                    <td style="vertical-align: bottom;">20.77</td>
-                    <td style="vertical-align: bottom;">48.95</td>
-                    <td style="vertical-align: bottom;">+10.38</td>
-                  </tr>
-                  <tr>
-                    <td style="vertical-align: bottom;">WikiSQL</td>
-                    <td style="vertical-align: bottom;">Accuracy</td>
-                    <td style="vertical-align: bottom;">14.84</td>
-                    <td style="vertical-align: bottom;">41.68</td>
-                    <td style="vertical-align: bottom;">89.50</td>
-                    <td style="vertical-align: bottom;">+26.84</td>
-                  </tr>
-                  <tr>
-                    <td style="vertical-align: bottom;">WikiTQ</td>
-                    <td style="vertical-align: bottom;">Accuracy</td>
-                    <td style="vertical-align: bottom;">25.48</td>
-                    <td style="vertical-align: bottom;">31.63</td>
-                    <td style="vertical-align: bottom;">57.50</td>
-                    <td style="vertical-align: bottom;">+6.15</td>
-                  </tr>
-                  <!-- More rows following the same pattern -->
-                </tbody>
-              </table>
-              <!-- Additional HTML for pagination and search, if needed -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
