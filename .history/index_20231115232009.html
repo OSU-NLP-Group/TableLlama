@@ -270,16 +270,19 @@
                 <table id="myTable" class="dataTable no-footer" role="grid">
                   <thead>
                     <tr role="row">
-                      <th style="vertical-align: bottom;">Task Category</th>
-                      <th style="vertical-align: bottom;">Task Name</th>
-                      <th style="vertical-align: bottom;">Dataset</th>
-                      <th style="vertical-align: bottom;">In-domain</th>
+                      <th rowspan="2" style="vertical-align: bottom;">Task Category</th>
+                      <th rowspan="2" style="vertical-align: bottom;">Task Name</th>
+                      <th rowspan="2" style="vertical-align: bottom;">Dataset</th>
+                      <th rowspan="2" style="vertical-align: bottom;">In-domain</th>
+                      <th colspan="2" style="vertical-align: bottom;"></th>
+                      <!-- <th colspan="3" style="vertical-align: bottom; text-align: middle;">Input Token Length</th> -->
+                    </tr>
+                    <tr role="row">
                       <th style="vertical-align: bottom; text-align: middle;">Train (Table/Sample)</th>
                       <th style="vertical-align: bottom;">Test (Table/Sample)</th>
                       <th style="vertical-align: bottom;">min tokens</th>
                       <th style="vertical-align: bottom;">max tokens</th>
-                      <th style="vertical-align: bottom;">median tokens</th>
-                      <!-- <th colspan="3" style="vertical-align: bottom; text-align: middle;">Input Token Length</th> -->
+                      <th style="vertical-align: bottom;">median</th>
                     </tr>
                   </thead>
                   <tbody>
