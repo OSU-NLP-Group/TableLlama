@@ -188,10 +188,8 @@
             <!-- <h2 class="title is-3">Introduction</h2> -->
             <div class="content has-text-justified">
               <p>
-                In this work, we proposed <b>TableLlama</b> and <b>TableInstruct</b>, which are (up to Nov, 2023) the
-                first
-                <b>open-source generalist model</b> and <b>dataset</b> for <b>tables</b>. Everything is
-                <b>open-source</b> right now!
+                In this work, we proposed <b>TableLlama</b> and <b>TableInstruct</b>, which are (up to Nov, 2023) the first
+                <b>open-source generalist model</b> and <b>dataset</b> for <b>tables</b>. Everything is <b>open-source</b> right now!
               </p>
               <p>
                 <b>TableInstruct</b> is a large-scale instruction tuning dataset with diverse, realistic tasks based on
@@ -228,8 +226,7 @@
                           <img src="static/images/overview1_yifei_1114-v13.png"
                             alt="An overview of TableInstruct and TableLlama">
                           <p>
-                            <b>Figure 1</b>: An overview of TableInstruct and TableLlama. TableInstruct includes a wide
-                            variety
+                          <b>Figure 1</b>: An overview of TableInstruct and TableLlama. TableInstruct includes a wide variety
                             of
                             realistic tables and tasks with instructions. We make the first step towards developing
                             open-source
@@ -286,10 +283,7 @@
 
               <p><i>Updates</i></p>
               <ul>
-                <li>2023/11/20: We have released the <a
-                    href="https://huggingface.co/datasets/osunlp/TableInstruct/">dataset</a>, <a
-                    href="https://huggingface.co/osunlp/TableLlama/">model weights</a>, and <a
-                    href="https://github.com/OSU-NLP-Group/TableLlama/">codebase</a> for the paper. Check it out!</li>
+                <li>2023/11/20: We have released the <a href="https://huggingface.co/datasets/osunlp/TableInstruct/">dataset</a>, <a href="https://huggingface.co/osunlp/TableLlama/">model weights</a>, and <a href="https://github.com/OSU-NLP-Group/TableLlama/">codebase</a> for the paper. Check it out!</li>
               </ul>
             </div>
           </div>
@@ -298,6 +292,13 @@
     </div>
   </section>
   <!-- End paper abstract -->
+
+
+
+
+
+
+  
 
   <section class="hero">
     <div class="hero-body">
@@ -309,75 +310,32 @@
               <p>
                 We construct <span><b>TableInstruct</b></span>, a comprehensive table-based instruction tuning dataset
                 that covers a variety of real-world tables and realistic tasks. We include <b>14 datasets of 11
-                  tasks</b> in total, with both <b>in-domain</b> and <b>out-of-domain evaluation settings</b>. Some
-                examples can be found in the figure below:
+                  tasks</b> in total, with both <b>in-domain</b> and <b>out-of-domain evaluation settings</b>. Some examples can be found in the figure below:
               </p>
               <!-- Image carousel -->
-              <section class="hero">
-                <div class="hero-body">
-                  <div class="container is-max-desktop">
-                    <div class="columns is-centered">
-                      <div class="column is-four-fifths">
-                        <div class="item">
-                          <!-- Your image here -->
-                          <img src="static/images/TableLlama-fig2.png"
-                            alt="The illustration of three exemplary tasks from TableInstruct">
-                          <p>
-                            <b>Figure 2</b>: Illustration of three exemplary tasks: (a) Column type annotation. This
-                            task is to annotate
-                            the selected column with the correct semantic types. (b) Row population. This task is to
-                            populate rows
-                            given table metadata and partial row entities. (c) Hierarchical table QA. For subfigures (a)
-                            and (b), we
-                            mark candidates with red color in the
-                            "task instruction" part. The candidate set size can be hundreds to thousands in
-                            TableInstruct.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- End image carousel -->
-              <!-- <h4>Data Overview</h4> -->
-              <!-- <p><b>TableInstruct</b> incorporates samples from 14 table-based datasets of 11 distinctive tasks.</p> -->
-              <!-- <h4>Task Category</h4> -->
-              
-              <!-- <b>TableLlama</b> is an open-source LLM-based generalist model fine-tuned on <b>TableInstruct</b>.
-              Experiments show that compared with the SOTA on each task that often has special pre-training or model
-              architecture design for tables, TableLlama can achieve comparable or even better performance on almost all
-              of the in-domain tasks. For out-of-domain tasks, compared with the base model, TableLlama can achieve 6-48
-              absolute point gains on 6 datasets, which demonstrates that TableInstruct can substantially enhance model
-              generalizability.
-              TableInstruct is a dataset for developing and evaluating generalist agents for the web that can follow
-              language instructions to complete complex tasks on any website. Mind2Web contains 2,350 tasks from 137
-              websites spanning 31 domains that:
-              Reflect diverse and practical use cases on the web.
-              Provide challenging yet realistic environments with real-world websites.
-              Test generalization ability across tasks and environments.
-              In this work, we proposed <b>TableLlama</b> and <b>TableInstruct</b>,
-              Semi-structured tables are ubiquitous. There has been a variety of tasks that aim to automatically
-              interpret, augment, and query tables. Current methods often require pretraining on tables or special
-              model architecture design, are restricted to specific table types, or have simplifying assumptions about
-              tables and tasks. This paper makes the first step towards developing open-source large language models
-              (LLMs) as generalists for a diversity of table-based tasks. Towards that end, we construct
-              TableInstruct, a new dataset with a variety of realistic tables and tasks, for instruction tuning and
-              evaluating LLMs. We further develop the first open-source generalist model for tables, TableLlama, by
-              fine-tuning Llama 2 (7B) with LongLoRA to address the long context challenge. We experiment under both
-              in-domain setting and out-of-domain setting. On 7 out of 8 in-domain tasks, TableLlama achieves com-
-              parable or better performance than the SOTA for each task, despite the latter often has task-specific
-              design. On 6 out-of-domain datasets, it achieves 6-48 absolute point gains compared with the base model,
-              showing that training on TableInstruct enhances the model’s generalizability. We will open-source our
-              dataset and trained model to boost future work on developing open generalist models for tables. -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <div class="item">
+              <!-- Your image here -->
+              <img src="static/images/TableLlama-fig2.png"
+                alt="The illustration of three exemplary tasks from TableInstruct">
+              <p>
+                <b>Figure 2</b>: Illustration of three exemplary tasks: (a) Column type annotation. This task is to annotate
+                the selected column with the correct semantic types. (b) Row population. This task is to populate rows
+                given table metadata and partial row entities. (c) Hierarchical table QA. For subfigures (a) and (b), we
+                mark candidates with red color in the
+                "task instruction" part. The candidate set size can be hundreds to thousands in TableInstruct.
               </p>
             </div>
-            
-            <h2 class="title is-3">Data Statistics</h2>
-            <div class="content has-text-justified">
-              <p><b>TableInstruct</b> include a various kinds of table tasks to comprehensively represent different
-                table-related applications in real-word scenario. These tasks are: table interpretation, table
-                augmentation, question answering, fact verification, dialogue generation, and data-to-text. The table below shows the statistics of <b>TableInstruct</b>:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
               <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
                 <table id="myTable" class="dataTable no-footer" role="grid">
                   <thead>

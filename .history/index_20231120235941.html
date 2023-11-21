@@ -340,11 +340,14 @@
                 </div>
               </section>
               <!-- End image carousel -->
-              <!-- <h4>Data Overview</h4> -->
-              <!-- <p><b>TableInstruct</b> incorporates samples from 14 table-based datasets of 11 distinctive tasks.</p> -->
-              <!-- <h4>Task Category</h4> -->
-              
-              <!-- <b>TableLlama</b> is an open-source LLM-based generalist model fine-tuned on <b>TableInstruct</b>.
+              <h4>Data Overview</h4>
+              <b>TableInstruct</b> incorporates samples from 14 table-based datasets of 11 distinctive tasks.<br>
+              <h4>Task Category</h4>
+              <b>TableInstruct</b> include a various kinds of table tasks to comprehensively represent different
+              table-related applications in real-word scenario. These tasks are: table interpretation, table
+              augmentation, question answering, fact verification, dialogue generation, and data-to-text.<br>
+              Details are shown in the table below.
+              <b>TableLlama</b> is an open-source LLM-based generalist model fine-tuned on <b>TableInstruct</b>.
               Experiments show that compared with the SOTA on each task that often has special pre-training or model
               architecture design for tables, TableLlama can achieve comparable or even better performance on almost all
               of the in-domain tasks. For out-of-domain tasks, compared with the base model, TableLlama can achieve 6-48
@@ -369,15 +372,10 @@
               parable or better performance than the SOTA for each task, despite the latter often has task-specific
               design. On 6 out-of-domain datasets, it achieves 6-48 absolute point gains compared with the base model,
               showing that training on TableInstruct enhances the model’s generalizability. We will open-source our
-              dataset and trained model to boost future work on developing open generalist models for tables. -->
+              dataset and trained model to boost future work on developing open generalist models for tables.
               </p>
-            </div>
-            
-            <h2 class="title is-3">Data Statistics</h2>
-            <div class="content has-text-justified">
-              <p><b>TableInstruct</b> include a various kinds of table tasks to comprehensively represent different
-                table-related applications in real-word scenario. These tasks are: table interpretation, table
-                augmentation, question answering, fact verification, dialogue generation, and data-to-text. The table below shows the statistics of <b>TableInstruct</b>:</p>
+              <h4>Data Statistics</h4>
+              <p>Below shows the statistics of <b>TableInstruct</b></p>
               <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
                 <table id="myTable" class="dataTable no-footer" role="grid">
                   <thead>
