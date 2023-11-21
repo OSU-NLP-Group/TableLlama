@@ -23,7 +23,7 @@ Figure 2: Illustration of three exemplary tasks: (a) Column type annotation. Thi
 
 Release progress:
 - :ballot_box_with_check: Training Dataset for TableLlama (check /data_v3 of 🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)) (completed)
-- :ballot_box_with_check: TableLlam-7B model (completed)
+- :ballot_box_with_check: TableLlama-7B model (completed)
 - :ballot_box_with_check: Code for Fine-tuning and Inference (completed)
 - :white_large_square: Evaluate Dataset of TableInstruct (TODO) 
 - :white_large_square: Code for Evaluation (TODO) 
