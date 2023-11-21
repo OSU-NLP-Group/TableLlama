@@ -12,20 +12,27 @@ This repo contains the code, data, and models for "[TableLlama: Towards Open Lar
 <div align="center">
   <img src="tablellama_figure1.png" width="80%" title="Introduction Figure">
 </div>
+Figure 1: An overview of TableInstruct and TableLlama. TableInstruct includes a wide variety of realistic tables and tasks with instructions. We make the first step towards developing open-source generalist models for tables with TableInstruct and TableLlama.
 
 <br>
 <div align="center">
   <img src="tablellama_figure2.png" width="80%" title="Examplars Figure">
 </div>
+Figure 2: Illustration of three exemplary tasks: (a) Column type annotation. This task is to annotate the selected column with the correct semantic types. (b) Row population. This task is to populate rows given table metadata and partial row entities. (c) Hierarchical table QA. For subfigures (a) and (b), we mark candidates with red color in the "task instruction" part. The candidate set size can be hundreds to thousands in TableInstruct.
 
 ### Datasets and Models
 Our dataset and models are all available at Huggingface.
 
-🤗 [TableInstruct Dataset](https://osu-nlp-group.github.io/TableLlama/)
-
-|     	| Base Model: Llama-2                                           	
+🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)
+                                       	
 |-----	|---------------------------------------------------------------	
-| 7B  	| [TableLlama-7B](https://osu-nlp-group.github.io/TableLlama/)   	                                                                      
+🤗 [TableLlama-7B](https://osu-nlp-group.github.io/TableLlama/)   	
+
+The model is fine-tuned with the TableInstruct dataset using LongLoRA (7B), fully fine-tuning version as the base model, which replaces the vanilla attention mechanism of the original Llama-2 (7B) with shift short attention. The training takes 9 days on a 48*A100 cluster. Check out our paper for more details.
+
+TableInstruct includes a comprehensive table-based instruction tuning dataset that covers a variety of real-world tables and realistic tasks. We include 14 datasets of 11 tasks in total. 
+
+The model is evaluated on 8 in-domain datasets of 8 tasks and 6 out-of-domain datasets of 4 tasks.
 
 
 ## **Table of Contents**
@@ -33,11 +40,10 @@ Our dataset and models are all available at Huggingface.
 - [📌 Introduction](#introduction)
 - [⚙️ Installation](#installation)
 - [🛠️ Training and Inference](#training-and-inference)
-- [📜 License](#license)
 - [📖 Citation](#citation)
 
 ## **Introduction**
-We introduce TableLlama and TableInstruct: the FIRST open-source generalist LLM and instruction tuning dataset for tables.
+We introduce TableLlama and TableInstruct: the FIRST open-source generalist LLM and instruction tuning dataset for tables. The TableLlama model is trained on TableInstruct Dataset, a meticulously curated instruction tuning dataset for tables. TableLlama is tuned on **2.6 million** table-based task data, and can handle up to **8K** context!
 
 
 ## **Installation**
