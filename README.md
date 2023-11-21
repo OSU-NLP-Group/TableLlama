@@ -36,7 +36,7 @@ Our dataset and models are all available at Huggingface.
                                        	
 🤗 [TableLlama-7B](https://osu-nlp-group.github.io/TableLlama/)   	
 
-The model is fine-tuned with the TableInstruct dataset using LongLoRA (7B), fully fine-tuning version as the base model, which replaces the vanilla attention mechanism of the original Llama-2 (7B) with shift short attention. The training takes 9 days on a 48*A100 cluster. Check out our paper for more details.
+The model is fine-tuned with the TableInstruct dataset using LongLoRA (7B), fully fine-tuning version as the base model, which replaces the vanilla attention mechanism of the original Llama-2 (7B) with shift short attention. The training takes 9 days on a 48 80*A100 cluster. Check out our paper for more details.
 
 TableInstruct includes a comprehensive table-based instruction tuning dataset that covers a variety of real-world tables and realistic tasks. We include 14 datasets of 11 tasks in total. 
 
@@ -102,8 +102,8 @@ torchrun --nproc_per_node=8 supervised_fine_tune_stream.py  \
         --model_max_length 8192 \
         --use_flash_attn True \
         --data_path $DATA_DIR \
-        --gpu_size 16 \
-        --data_size 628254 \
+        --gpu_size $GPU_SIZE \
+        --data_size $DATA_SIZE \
         --cache_dir /ML-A800/hf_cache  \
         --low_rank_training False \
         --num_train_epochs 2  \
