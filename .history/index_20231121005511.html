@@ -557,7 +557,7 @@
             <h2 class="title is-3">In-domain Evaluation</h2>
             
             <div class="content has-text-justified">
-              We first evaluate <b>TableLlama</b> on 8 in-domain test sets. Due to the special semi-structured nature of tables, for most table-based tasks, existing work achieves SOTA results by using pretraining on large-scale tables and/or special model architecture design tailored for tables. Surprisingly, <b>with a unified format and no extra special design, <b>TableLlama</b> can achieve comparable or even better performance on almost all the tasks</b>. The table below shows the results:<br><br>
+              We first evaluate <b>TableLlama</b> on 8 in-domain test sets. Due to the special semi-structured nature of tables, for most table-based tasks, existing work achieves SOTA results by using pretraining on large-scale tables and/or special model architecture design tailored for tables. Surprisingly, <b>with a unified format and no extra special design, <b>TableLlama</b> can achieve comparable or even better performance on almost all the tasks</b>. The table below shows the results:
               <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
                 <table id="myTable" class="dataTable no-footer" role="grid">
                   <thead>
@@ -623,14 +623,11 @@
                   </tbody>
                 </table>
                 <!-- Additional HTML for pagination and search, if needed -->
-              </div>
-              <div>
-              <br>
-              Specifically, we observed these following takeaways:
+                Specifically, we observed these following takeaways:
                 <ol>
                   <li>By simply fine-tuning a large language model on TableInstruct, TableLlama can achieve comparable or even better performance on almost all the tasks <b>without any table pretraining or special table model architecture design</b>;</li>
-                  <li><b>TableLlama displays advantanges in table QA tasks</b>: <b>TableLlama</b> can surpass the SOTA by <b>5.61 points</b> for highlighted cell based table QA task (i.e., FeTaQA) and <b>17.71 points</b> for hierarchical table QA (i.e., HiTab), which is full of numerical reasoning on tables. As LLMs have shown superior in interacting with humans and answering questions, this indicates that <b>the existing underlying strong language understanding ability of LLMs may be beneficial for such table QA tasks, despite with semi-structured tables</b>;</li>
-                  <li><b>For the entity linking task</b>, which requires the model to link the mention in a table cell to the correct referent entity in Wikidata, <b>TableLlama</b> <b>also presents superior performance with 8 points gain over the SOTA performance</b>. Since the candidates are composed of their referent entity name and description, we hypothesize LLMs have certain abilities to understand the description which help identify the correct entities;</li>
+                  <li><b>TableLlama displays advantanges in table QA tasks</b>: <b>TableLlama</b> can surpass the SOTA by <b>5.61 points</b> for highlighted cell based table QA task (i.e., FeTaQA) and <b>17.71 points</b> for hierarchical table QA (i.e., HiTab), which is full of numerical reasoning on tables. As LLMs have shown superior in interacting with humans and answering questions, this indicates that <b>the existing underlying strong language understanding ability of LLMs may be beneficial for such table QA tasks, despite with semi-structured tables</b>.</li>
+                  <li><b>For the entity linking task</b>, which requires the model to link the mention in a table cell to the correct referent entity in Wikidata, <b>TableLlama</b> <b>also presents superior performance with 8 points gain over the SOTA performance</b>. Since the candidates are composed of their referent entity name and description, we hypothesize LLMs have certain abilities to understand the description which help identify the correct entities.</li>
                   <li>Row population is the only task where <b>TableLlama</b> has a large performance gap compared to the SOTA. We observed that, <b>in order to correctly populate the entities from the given large number of candidates, the model needs to fully understand the inherent relation between the enquiried entity and each given candidate, which is still challenging for the current model</b>. Detailed analysis and case study can be found in our paper's <b>Section 4.1</b> and <b>Table 5 in Appendix A</b>.</li>
                 </ol>
               </div>
@@ -649,7 +646,7 @@
           <div class="column has-text-centered is-fifths-fifths">
             <h2 class="title is-3">Out-of-domain Evaluation</h2>
             <div class="content has-text-justified">
-              To show the model's generalizability on unseen data and unseen tasks, we evaluate <b>TableLlama</b> on several out-of-domain datasets. <b>Overall, <b>TableLlama</b> shows a remarkable generalizability on different out-of-domain tasks, by outperforming the baselines from 6 to 48 absolute points</b>. The table below shows the results:
+              We evaluate <b>TableLlama</b> on three out-of-domain datasets
               <!-- To better understand how TableInstruct helps enhance model generalizability, we conduct an ablation study to show the transfer between individual datasets. -->
               <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
                 <table id="myTable" class="dataTable no-footer" role="grid">
@@ -716,15 +713,6 @@
                   </tbody>
                 </table>
                 <!-- Additional HTML for pagination and search, if needed -->
-              </div>
-              <div>
-                <br>
-                Specifically, we observed these following takeaways:
-                <ol>
-                  <li><b>By learning from the table-based training tasks, the model has acquired essential underlying table understanding ability, which can be transferred to other table-based tasks/datasets and facilitate their performance;</b></li>
-                  <li>FEVEROUS exhibits the largest gain over the other 5 datasets. This is likely because the fact verification task is an in-domain training task, although the dataset is unseen during training. <b>Compared with cross-task generalization, it may be easier to generalize to different datasets belonging to the same tasks</b>;</li>
-                  <li>Although there's a gap between <b>TableLlama</b> results and SOTA performances, <b>those SOTAs were achieved under full-dataset training while TableLlama is zero-shot</b>. Nevertheless, we hope our work can inspire future work to further improve the zero-shot performance.</li>
-                </ol>
               </div>
             </div>
           </div>
