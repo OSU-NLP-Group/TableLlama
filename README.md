@@ -10,13 +10,13 @@ This repo contains the code, data, and models for "[TableLlama: Towards Open Lar
 
 <br>
 <div align="center">
-  <img src="tableLlama_figure1.png" width="80%" title="Introduction Figure">
+  <img src="tablellama_figure1.png" width="80%" title="Introduction Figure">
 </div>
 Figure 1: An overview of TableInstruct and TableLlama. TableInstruct includes a wide variety of realistic tables and tasks with instructions. We make the first step towards developing open-source generalist models for tables with TableInstruct and TableLlama.
 
 <br>
 <div align="center">
-  <img src="tableLlama_figure2.png" width="80%" title="Examplars Figure">
+  <img src="tablellama_figure2.png" width="80%" title="Examplars Figure">
 </div>
 Figure 2: Illustration of three exemplary tasks: (a) Column type annotation. This task is to annotate the selected column with the correct semantic types. (b) Row population. This task is to populate rows given table metadata and partial row entities. (c) Hierarchical table QA. For subfigures (a) and (b), we mark candidates with red color in the "task instruction" part. The candidate set size can be hundreds to thousands in TableInstruct.
 
