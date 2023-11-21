@@ -1,4 +1,4 @@
-[![Gradio](https://img.shields.io/badge/Gradio-Online%20Demo-blue)](https://9415315be10389c622.gradio.live)
+
 
 
 # **TableLlama** 
