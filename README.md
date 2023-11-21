@@ -25,7 +25,7 @@ Release progress:
 - :ballot_box_with_check: Training Dataset for TableLlama (check /data_v3 of 🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)) (completed)
 - :ballot_box_with_check: TableLlama-7B model (completed)
 - :ballot_box_with_check: Code for Fine-tuning and Inference (completed)
-- :white_large_square: Evaluate Dataset of TableInstruct (TODO) 
+- :ballot_box_with_check: Evaluate Dataset of TableInstruct (check /eval_data of 🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)) (completed) 
 - :white_large_square: Code for Evaluation (TODO) 
 <!-- - :white_large_square: Code for Fine-tuning and Centralized training (TODO) -->
 
