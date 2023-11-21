@@ -557,7 +557,7 @@
             <h2 class="title is-3">In-domain Evaluation</h2>
             
             <div class="content has-text-justified">
-              We first evaluate <b>TableLlama</b> on 8 in-domain test sets. Due to the special semi-structured nature of tables, for most table-based tasks, existing work achieves SOTA results by using pretraining on large-scale tables and/or special model architecture design tailored for tables. Surprisingly, <b>with a unified format and no extra special design, <b>TableLlama</b> can achieve comparable or even better performance on almost all the tasks</b>. The table below shows the results:
+              We first evaluate <b>TableLlama</b> on 8 in-domain test sets. The following table shows the overall results for the 8 in-domain tasks:
               <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
                 <table id="myTable" class="dataTable no-footer" role="grid">
                   <thead>
@@ -623,7 +623,7 @@
                   </tbody>
                 </table>
                 <!-- Additional HTML for pagination and search, if needed -->
-                Specifically, we observed these following takeaways:
+                Due to the special semi-structured nature of tables, for most table-based tasks, existing work achieves SOTA results by using pretraining on large-scale tables and/or special model architecture design tailored for tables. Nevertheless, we observed that:
                 <ol>
                   <li>By simply fine-tuning a large language model on TableInstruct, TableLlama can achieve comparable or even better performance on almost all the tasks <b>without any table pretraining or special table model architecture design</b>;</li>
                   <li><b>TableLlama displays advantanges in table QA tasks</b>: <b>TableLlama</b> can surpass the SOTA by <b>5.61 points</b> for highlighted cell based table QA task (i.e., FeTaQA) and <b>17.71 points</b> for hierarchical table QA (i.e., HiTab), which is full of numerical reasoning on tables. As LLMs have shown superior in interacting with humans and answering questions, this indicates that <b>the existing underlying strong language understanding ability of LLMs may be beneficial for such table QA tasks, despite with semi-structured tables</b>.</li>
@@ -646,7 +646,6 @@
           <div class="column has-text-centered is-fifths-fifths">
             <h2 class="title is-3">Out-of-domain Evaluation</h2>
             <div class="content has-text-justified">
-              To better understand how TableInstruct helps enhance model generalizability, we conduct an ablation study to show the transfer between individual datasets.
               <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
                 <table id="myTable" class="dataTable no-footer" role="grid">
                   <thead>
