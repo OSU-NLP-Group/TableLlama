@@ -201,7 +201,7 @@
                 <li>All data items are <b>unified into an instruction tuning manner</b> for further LLM training;</li>
                 <li>All data items in <b>TableInstruct</b> are collected from real tables and real tasks;</li>
                 <!-- <li>Each task in <b>TableInstruct</b> is a realistic task that can be applied to real-world scenarios.</li> -->
-                <li><b>TableInstruct</b> provided both in-domain training tasks to empower the model with fundamental
+                <li><b>TableInstruct</b> provides both in-domain training tasks to empower the model with fundamental
                   table understanding abilities, and in-domain & out-of-domain evaluation tasks to test the model’s
                   generalization and high-level reasoning ability.</li>
               </ul>
@@ -209,10 +209,10 @@
               <p>
                 <b>TableLlama</b> is a large generalist model for tables based on Llama 2 (7B) and LongLoRA, which can:
               <ul>
-                <li><b>Support long input lengths (up to <code>8k</code>);</b></li>
+                <li><b>Support long input context (up to <code>8k</code>);</b></li>
                 <li>Achieve <b>comparable or even better performance</b> than the SOTA on almost all of the in-domain
                   tasks;</li>
-                <li>Achieve <b>6-48 absolute point gains</b> on 6 datasets compared with the base model, demonstrating
+                <li>Achieve <b>6-48 absolute point gains</b> on 6 out-of-domain datasets compared with the base model, demonstrating
                   that TableInstruct can substantially enhance model generalizability.</li>
               </ul>
               <!-- is adopted to address the long context challenge. <b>TableLlama</b> is trained on <b>TableInstruct</b> and achieves comparable or even better performance than the SOTA on almost all of the in-domain tasks. For out-of-domain tasks, compared with the base model, TableLlama can achieve 6-48 absolute point gains on 6 datasets, which demonstrates that TableInstruct can substantially enhance model generalizability. -->
@@ -266,8 +266,7 @@
                             fine-tuning Llama 2 (7B) with LongLoRA to address the long context challenge. We experiment
                             under both
                             in-domain setting and out-of-domain setting. On 7 out of 8 in-domain tasks, TableLlama
-                            achieves com-
-                            parable or better performance than the SOTA for each task, despite the latter often has
+                            achieves comparable or better performance than the SOTA for each task, despite the latter often has
                             task-specific
                             design. On 6 out-of-domain datasets, it achieves 6-48 absolute point gains compared with the
                             base model,
