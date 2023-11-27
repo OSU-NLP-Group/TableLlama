@@ -9,7 +9,7 @@ import transformers
 from peft import PeftModel
 from transformers import GenerationConfig
 from llama_attn_replace import replace_llama_attn
-from supervised_fine_tune_rel_extraction import PROMPT_DICT
+from supervised_fine_tune import PROMPT_DICT
 from tqdm import tqdm
 # from queue import Queue
 # from threading import Thread
