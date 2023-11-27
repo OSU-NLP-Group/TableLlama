@@ -29,14 +29,6 @@ from llama_attn_replace import replace_llama_attn
 from peft import LoraConfig, get_peft_model
 from torch.distributed import barrier
 
-import os 
-os.environ['WANDB_API_KEY'] = 'bc691889532eecf2c3d704c7a60eb76f0966502d'
-os.environ['WANDB_PROJEC'] = 'finetune_alpaca_table'
-os.environ['WANDB_ENTIT'] = 'zts'
-
-import wandb
-init_args = {}
-wandb.init(project="finetune_alpaca_table", name= "finetune_alpaca", entity="zts", **init_args,)
 
 
 IGNORE_INDEX = -100
