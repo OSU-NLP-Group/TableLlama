@@ -65,7 +65,7 @@ pip install flash-attn --no-build-isolation
 To train the 7B model, run:
 
 ```bash
-torchrun --nproc_per_node=8 ./supervised_fine_tune.py  \
+torchrun --nproc_per_node=8 supervised_fine_tune.py  \
         --model_name_or_path $MODEL_DIR \
         --bf16 True \
         --output_dir $OUTPUT_DIR  \
