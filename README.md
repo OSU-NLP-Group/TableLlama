@@ -1,16 +1,13 @@
-
-
-
-# **TableLlama** 
-This repo contains the code, data, and models for "[TableLlama: Towards Open Large Generalist Models for Tables](https://arxiv.org/pdf/2311.09206.pdf)"
+<h1 align="center">TableLlama <br> Towards Open Large Generalist Models for Tables</h1>
 
 <div align="center">
- 🔥 🔥 🔥 Check out our <a href = "https://osu-nlp-group.github.io/TableLlama/">[Project Page]</a> for more results and analysis!
+ 🔥 🔥 🔥 This repo contains the code, data, and models for <a href="https://arxiv.org/pdf/2311.09206.pdf">TableLlama</a>.
+Check out our <a href = "https://osu-nlp-group.github.io/TableLlama/">[Project Page]</a> for more results and analysis!
 </div>
 
 <br>
 <div align="center">
-  <img src="tablellama_figure1.png" width="80%" title="Introduction Figure">
+  <img src="overview1_yifei_1114-v13.png" width="80%" title="Introduction Figure">
 </div>
 Figure 1: An overview of TableInstruct and TableLlama. TableInstruct includes a wide variety of realistic tables and tasks with instructions. We make the first step towards developing open-source generalist models for tables with TableInstruct and TableLlama.
 
@@ -21,13 +18,20 @@ Figure 1: An overview of TableInstruct and TableLlama. TableInstruct includes a 
 Figure 2: Illustration of three exemplary tasks: (a) Column type annotation. This task is to annotate the selected column with the correct semantic types. (b) Row population. This task is to populate rows given table metadata and partial row entities. (c) Hierarchical table QA. For subfigures (a) and (b), we mark candidates with red color in the "task instruction" part. The candidate set size can be hundreds to thousands in TableInstruct.
 
 
-Release progress:
+<h3>Release progress</h3>
+
 - :ballot_box_with_check: Training Dataset for TableLlama (check /data_v3 of 🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)) (completed)
 - :ballot_box_with_check: TableLlama-7B model (completed)
 - :ballot_box_with_check: Code for Fine-tuning and Inference (completed)
 - :ballot_box_with_check: Evaluate Dataset of TableInstruct (check /eval_data of 🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)) (completed) 
 - :white_large_square: Code for Evaluation (TODO) 
 <!-- - :white_large_square: Code for Fine-tuning and Centralized training (TODO) -->
+
+<h3>Updates</h3>
+
+- 2024/3/13: Our paper has been accepted by NAACL 2024!
+- 2024/3/21: We refine the prompts of 4 out-of-domain evaluation datasets: FEVEROUS, HybridQA, WikiSQL and WikiTQ of [TableInstruct](https://huggingface.co/datasets/osunlp/TableInstruct/) and update the results. Check the new results!
+- 2024/3/21: We add the results of closed-source LLMs: GPT-3.5 and GPT-4.
 
 ### Datasets and Models
 Our dataset and models are all available at Huggingface.
@@ -154,6 +158,22 @@ appropriately completes the request.
 
 ### Response:
 ```
+
+
+- The instruction is designed to point out the task and give a detailed task description.
+- The input is designed to provide the information about the table. We concatenate table metadata (if any) such as the Wikipedia page title, section
+title and table caption with the serialized table as table input. We use '[TLE]' to represent the beginning of the table metadata, and use '[TAB]' to represent the beginning of the serialized table.
+- The question is to accommodate all the information the model needs to complete the task and prompt the model to generate an answer.
+- Task prompts examples (For more example prompts for other tasks, please refer to Appendix E in our paper.)
+
+<br>
+<div align="center">
+  <img src="https://github.com/zhangtianshu/tablellama/blob/main/tablellama_images/hitab.png" width="80%" title="hierarchical table qa">
+  <img src="https://github.com/zhangtianshu/tablellama/blob/main/tablellama_images/fetaqa.png" width="80%" title="hierarchical table qa">
+  <img src="https://github.com/zhangtianshu/tablellama/blob/main/tablellama_images/hybridqa.png" width="80%" title="hierarchical table qa">
+  <img src="https://github.com/zhangtianshu/tablellama/blob/main/tablellama_images/tabfact.png" width="80%" title="hierarchical table qa">
+</div>
+
 
 ## **Citation**
 
