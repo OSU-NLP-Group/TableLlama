@@ -7,13 +7,13 @@ Check out our <a href = "https://osu-nlp-group.github.io/TableLlama/">[Project P
 
 <br>
 <div align="center">
-  <img src="overview1_yifei_1114-v13.png" width="100%" title="Introduction Figure">
+  <img src="https://github.com/OSU-NLP-Group/TableLlama/blob/main/imgs/tablellama_figure1.png" width="100%" title="Introduction Figure">
 </div>
 Figure 1: An overview of TableInstruct and TableLlama. TableInstruct includes a wide variety of realistic tables and tasks with instructions. We make the first step towards developing open-source generalist models for tables with TableInstruct and TableLlama.
 
 <br>
 <div align="center">
-  <img src="tablellama_figure2.png" width="100%" title="Examplars Figure">
+  <img src="https://github.com/OSU-NLP-Group/TableLlama/blob/main/imgs/tablellama_figure2.png" width="100%" title="Examplars Figure">
 </div>
 Figure 2: Illustration of three exemplary tasks: (a) Column type annotation. This task is to annotate the selected column with the correct semantic types. (b) Row population. This task is to populate rows given table metadata and partial row entities. (c) Hierarchical table QA. For subfigures (a) and (b), we mark candidates with red color in the "task instruction" part. The candidate set size can be hundreds to thousands in TableInstruct.
 
@@ -168,10 +168,10 @@ title and table caption with the serialized table as table input. We use '[TLE]'
 
 <br>
 <div align="center">
-  <img src="https://github.com/zhangtianshu/tablellama/blob/main/tablellama_images/hitab.png" width="100%" title="hierarchical table qa">
-  <img src="https://github.com/zhangtianshu/tablellama/blob/main/tablellama_images/fetaqa.png" width="100%" title="hierarchical table qa">
-  <img src="https://github.com/zhangtianshu/tablellama/blob/main/tablellama_images/hybridqa.png" width="100%" title="hierarchical table qa">
-  <img src="https://github.com/zhangtianshu/tablellama/blob/main/tablellama_images/tabfact.png" width="100%" title="hierarchical table qa">
+  <img src="https://github.com/OSU-NLP-Group/TableLlama/blob/main/imgs/hitab.png" width="100%" title="hierarchical table qa">
+  <img src="https://github.com/OSU-NLP-Group/TableLlama/blob/main/imgs/fetaqa.png" width="100%" title="hierarchical table qa">
+  <img src="https://github.com/OSU-NLP-Group/TableLlama/blob/main/imgs/hybridqa.png" width="100%" title="hierarchical table qa">
+  <img src="https://github.com/OSU-NLP-Group/TableLlama/blob/main/imgs/tabfact.png" width="100%" title="hierarchical table qa">
 </div>
 
 **Note:** 
