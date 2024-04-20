@@ -20,10 +20,10 @@ Figure 2: Illustration of three exemplary tasks: (a) Column type annotation. Thi
 
 <h3>Release progress</h3>
 
-- :ballot_box_with_check: Training Dataset for TableLlama (check /data_v3 of 🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)) 
+- :ballot_box_with_check: Training Dataset for TableLlama (check `/data_v3` of 🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)) 
 - :ballot_box_with_check: TableLlama-7B model 
 - :ballot_box_with_check: Code for Fine-tuning and Inference 
-- :ballot_box_with_check: Evaluate Dataset of TableInstruct (check /eval_data of 🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)) 
+- :ballot_box_with_check: Evaluate Dataset of TableInstruct (check `/eval_data` of 🤗 [TableInstruct Dataset](https://huggingface.co/datasets/osunlp/TableInstruct/)) 
 <!-- - :white_large_square: Code for Fine-tuning and Centralized training (TODO) -->
 
 <h3>Updates</h3>
@@ -139,6 +139,14 @@ python3 inference_rel_extraction_col_type.py  \
         --output_data_file $OUTPUT_DIR/col_type_pred.json
 ```
 
+## **Evaluation**
+
+The folder `eval_scripts` includes evaluation scripts for all the in-domain test sets. To run the script, take HiTab (hierarchical table QA task) as an example:
+
+```bash
+cd eval_scripts
+python evaluate_hitab.py --file_pred $OUTPUT_DIR/hitab_pred.json
+```
 
 ## Prompt Format
 
