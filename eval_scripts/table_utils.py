@@ -92,11 +92,11 @@ def evaluate(golds, preds):
         
     correct_percent = 100.0 * correct_num/len(golds)
 
-    import json
-    with open("/users/PAA0201/shubaobao/LongLoRA/tommy_server/ckp-15k-pred/correct_hitab.json", "w") as f:
-        json.dump(correct_list, f, indent = 2)
-    with open("/users/PAA0201/shubaobao/LongLoRA/tommy_server/ckp-15k-pred/wrong_hitab.json", "w") as f:
-        json.dump(wrong_list, f, indent = 2)
+    # import json
+    # with open("/users/PAA0201/shubaobao/LongLoRA/tommy_server/ckp-15k-pred/correct_hitab.json", "w") as f:
+    #     json.dump(correct_list, f, indent = 2)
+    # with open("/users/PAA0201/shubaobao/LongLoRA/tommy_server/ckp-15k-pred/wrong_hitab.json", "w") as f:
+    #     json.dump(wrong_list, f, indent = 2)
     # print("correct_percent:", correct_percent)
     # import pdb
     # pdb.set_trace()
